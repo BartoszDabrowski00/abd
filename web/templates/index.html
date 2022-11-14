@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <ul>
+    {% for user in users %}
+        <li>Id: {{ user.id }}</li>
+        <ul>
+            <li>Mail: {{ user.email }}</li>
+            <li>Active: {{ user.active }}</li>
+            <li>Phones: </li>
+            <ul>
+            {% for phone in user.phones %}
+                <li>Id {{ phone.id }}</li>
+                <ul>
+                    <li>Brand: {{ phone.brand_name }}</li>
+                    <li>Year: {{ phone.year }}</li>
+                </ul>
+           {% endfor %}
+            </ul>
+        </ul>
+    {% endfor %}
+    </ul>
+</body>
+</html>

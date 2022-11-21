@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Order</title>
 </head>
 <body>
-
+    <h1>Order {{ order.order_id }}</h1>
+    <ul>
+        <li>end_location: {{ order.end_location }}</li>
+        <li>end_time: {{ order.end_time }}</li>
+        <li>is_canceled: {{ order.is_canceled }}</li>
+        <li>is_completed: {{ order.is_completed }}</li>
+        <li>number_of_passengers: {{ order.number_of_passengers }}</li>
+        <li>order_start_time: {{ order.order_start_time }}</li>
+        <li>order_time: {{ order.order_time }}</li>
+        <li>payment_method: {{ order.payment_method }}</li>
+        <li>price: {{ order.price }}</li>
+        <li>rating: {{ order.rating }}</li>
+        <li>start_location: {{ order.start_location }}</li>
+        <li>trunk_volume: {{ order.trunk_volume }}</li>
+        <li>driver_login: {{ order.driver_login }}</li>
+        <li>customer_login: {{ order.customer_login }}</li>
+    </ul>
 </body>
 </html>

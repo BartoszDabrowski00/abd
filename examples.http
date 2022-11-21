@@ -1,0 +1,42 @@
+POST http://localhost:5000/api/firstQuery/orm
+Content-Type: application/json
+
+{
+  "userLogin": "HYlZTFYuVB",
+  "orderTime": "1988-01-04T08:46:05",
+  "complaintTime": "2005-02-26T10:31:05",
+  "statusToUpdate": "completed"
+}
+
+###
+POST http://localhost:5000/api/firstQuery/native
+Content-Type: application/json
+
+{
+  "userLogin": "HYlZTFYuVB",
+  "orderTime": "1988-01-04T08:46:05",
+  "complaintTime": "2005-02-26T10:31:05",
+  "statusToUpdate": "completed"
+}
+
+###
+POST http://localhost:5000/api/secondQuery/orm
+Content-Type: application/json
+
+{
+  "numOfSeats": 6,
+  "startDate": "2021-01-01T00:00:00",
+  "endDate": "2022-01-01T00:00:00"
+}
+
+###
+POST http://localhost:5000/api/secondQuery/native
+Content-Type: application/json
+
+{
+  "numOfSeats": 6,
+  "startDate": "2021-01-01T00:00:00",
+  "endDate": "2022-01-01T00:00:00"
+}
+
+###

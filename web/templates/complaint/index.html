@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Complaint</title>
 </head>
 <body>
-
+    <h1>Complaint: {{ complaint.complaint_id }}</h1>
+    <ul>
+        <li>date_of_submission: {{ complaint.date_of_submission }}</li>
+        <li>description: {{ complaint.description }}</li>
+        <li>status: {{ complaint.status }}</li>
+        <li>order_id: {{ complaint.order_id }}</li>
+    </ul>
 </body>
 </html>

@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Card edit</title>
 </head>
 <body>
-
+<form action="/card/edit" method="POST">
+    <label for="card_number">Card number:</label><br>
+    <input type="text" id="card_number" name="card_number" value="{{ credit_card.card_number }}"><br>
+    <label for="cvc">Cvc code:</label><br>
+    <input type="password" id="cvc" name="cvc"><br>
+    <label for="expiration">Expiration date:</label><br>
+    <input type="text" id="expiration" name="expiration" value="{{ credit_card.expiration_date }}">
+    <input type="submit" value="Submit" >
+</form>
 </body>
 </html>

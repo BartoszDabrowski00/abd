@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer orders</title>
+</head>
+<body>
+    <h1>Customer orders</h1>
+    <ul>
+    {% for order in customer.orders %}
+        <li>Id: {{ order.order_id }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
